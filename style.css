@@ -1,0 +1,270 @@
+html, body {
+	margin: 0;
+	font-family: Arial;
+	background-color: #f2f2f2;
+}
+
+nav {
+	position: sticky;
+	padding: 10px 0 8px 0;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /*box shadow by https://getcssscan.com/css-box-shadow-examples*/
+	user-select: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #000;
+	color: ghostwhite;
+}
+
+nav > h3 {
+	margin-left: 20px;
+}
+
+
+.ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+li > a {
+	margin-right: 15px;
+	color: black;
+	text-decoration: none;
+	transition: all 0.4s;
+	font-size: 17px;
+	height: 100%;
+	color: ghostwhite;
+}
+
+li > a:hover {
+	color: #bfb352;
+	font-weight: 400;
+	border-bottom: 4px solid #d9cb62;
+	padding-bottom: 10px;
+	transition: all 0.4s;
+}
+
+.menuicon {
+	display: flex;
+	position: absolute;
+	display: none;
+	font-size: 27px;
+	right: .9rem;
+	top: 1.3rem;
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+}
+
+#chkbox {
+	display: none;
+}
+
+/*-----------------------------------menu end here------------------------------------------------*/
+
+.wcas {
+	background-color: #2abd62;
+	width: 100%;
+	margin: 0;
+	padding: 30px 0;
+	color: whitesmoke;
+	text-align: center;
+}
+
+.wcas > h2 {
+	margin-bottom: 2px;
+	margin-left: 35px;
+	font-size: 32px;
+	margin-top: 0;
+	text-align: left;
+}
+
+.wcas > p {
+	margin-top: 0;
+	margin-left: 35px;
+	font-size: 22px;
+	font-weight: 550;
+	text-align: left;
+}
+
+.wcas > button {
+	background-color: #e3d35b;
+	border-radius: 6px;
+	border: none;
+	color: whitesmoke;
+	font-size: 20px;
+	padding: 13px 20px;
+	cursor: pointer;
+}
+
+.wcas > button:hover {
+	background-color: #dbcc5a;
+}
+
+.sdgList {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.sdgList > strong {
+	text-align: center;
+}
+
+
+#containerbox {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin: 0 2%;
+	
+	border-radius: 7px;
+}
+
+#sdgBox {
+	background-color: #f7f7f7;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	border-radius: 7px;
+	border: 1 px solid black;
+	border-top: 8px solid #4eed9e;
+	margin: 0;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /*box shadow by https://getcssscan.com/css-box-shadow-examples*/
+}
+
+.learn-more {
+	width: 100%;
+	background-color: whitesmoke;
+	border: 1px solid #26c910;
+	padding: 10px 0;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-top: 5px;
+	transition: all .5s;
+}
+
+.learn-more:hover > span {
+	display: none;
+}
+
+.learn-more:hover:before {
+		content: "Learn More >";
+}
+
+.learn-more:hover {
+	background-color: #26c910;
+	transition: all .5s;
+}
+
+.inlineSdg {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0 10%;
+}
+
+/*-------------------------------------MOBILE VIEW------------------------------*/
+
+@media screen and (max-width: 800px) {
+
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.ul {
+	padding: 0;
+	margin: 0;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	display: none;
+}
+
+li {
+	width: 100%;
+}
+
+li > a {
+	flex-direction: column;
+	width: 100%;
+	margin: 0;
+	padding: 10px 0;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+li > a:hover {
+	background-color: #dbdbdb;
+	border-bottom: none;
+	padding-bottom: 10px;
+	margin: 0;
+	font-weight: normal;
+
+	transition: none;
+}
+
+#chkbox {
+	display: none;
+}
+
+.menuicon {
+	display: flex;
+}
+
+.ul.active {
+	display: flex;
+}
+
+.inlineSdg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  margin-bottom: 20px;
+}
+
+#sdgBox {
+	background-color: #f7f7f7;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	border-radius: 7px;
+	border: 1 px solid black;
+	margin-bottom: 20px;
+	border-top: 8px solid #4eed9e;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /*box shadow by https://getcssscan.com/css-box-shadow-examples*/
+}
+
+#containerbox {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 0;
+	border-radius: 7px;
+}
+
+	}
+
+@media screen and (max-width: 368px) {
+
+nav {
+	position: sticky;
+	width: 100%;
+	padding: 10px 0 8px 0;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /*box shadow by https://getcssscan.com/css-box-shadow-examples*/
+	user-select: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	nav > h3 {
+		margin: 10px 0 0 0;
+}
+
+	}
