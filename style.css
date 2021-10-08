@@ -17,7 +17,7 @@ nav {
 }
 
 nav > h3 {
-	margin-left: 20px;
+	margin-left: 1rem;
 }
 
 
@@ -95,7 +95,7 @@ li > a:hover {
 	border: none;
 	color: whitesmoke;
 	font-size: 20px;
-	padding: 13px 20px;
+	padding: 10px 17px;
 	cursor: pointer;
 }
 
@@ -118,6 +118,7 @@ li > a:hover {
 	justify-content: center;
 	width: 80%;
 	margin: 0 2%;
+	height: fit-content;
 	
 	border-radius: 7px;
 }
@@ -162,7 +163,71 @@ li > a:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	margin: 0 10%;
+	margin: 0 5%;
+}
+
+.cubox {
+	background-color: #1fff7c;
+	padding: 15px 0 20px 0;
+	width: 100%;
+	margin-top: 60px;
+	height: fit-content;
+}
+
+.cause {
+	margin: 20px 20px 20px 40px;
+}
+
+.cause > h3 {
+	font-size: 24px;
+	flex-direction: column;
+}
+
+.strwoc {
+	float: right;
+	height: 150px;
+	width: 150px;
+	margin-right: 50px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: -1.8rem;
+	border-radius: 50%;
+}
+
+#fct {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0 120px;
+}
+
+.nmbr {
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 50%;
+	padding: 15px;
+	display: flex;
+  width: 160px;
+  height: 160px;
+  align-content: center;
+  flex-direction: column;
+}
+
+#sdfct {
+	margin-left: 40px;
+	margin-top: 30px;
+	font-size: 26px;
+}
+
+.nmbr > h4 {
+	font-size: 31px;
+	line-height: 20%;
+
+}
+
+.nmbr > p {
+	font-size: 14px;
 }
 
 /*-------------------------------------MOBILE VIEW------------------------------*/
@@ -200,12 +265,11 @@ li > a {
 }
 
 li > a:hover {
-	background-color: #dbdbdb;
+	background-color: #2d2e2d;
 	border-bottom: none;
 	padding-bottom: 10px;
 	margin: 0;
 	font-weight: normal;
-
 	transition: none;
 }
 
@@ -219,7 +283,7 @@ li > a:hover {
 
 .ul.active {
 	display: flex;
-}
+} 
 
 .inlineSdg {
 	display: flex;
@@ -248,23 +312,43 @@ li > a:hover {
 	border-radius: 7px;
 }
 
+#fct {
+	flex-direction: column;
+}
+
+#sdfct {
+	margin-left: 30px;
+	margin-top: 30px;
+	font-size: 24px;
+}
+
+.nmbr {
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 50%;
+	padding: 15px;
+	display: flex;
+  width: 150px;
+  margin-bottom: 20px;
+  height: 150px;
+  align-content: center;
+  flex-direction: column;
+}
+
+.nmbr > h4 {
+	font-size: 27px;
+	line-height: 20%;
+
+}
+
+.nmbr > p {
+	font-size: 14px;
+}
+
 	}
 
 @media screen and (max-width: 368px) {
 
-nav {
-	position: sticky;
-	width: 100%;
-	padding: 10px 0 8px 0;
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /*box shadow by https://getcssscan.com/css-box-shadow-examples*/
-	user-select: none;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-	nav > h3 {
-		margin: 10px 0 0 0;
 }
 
 	}
