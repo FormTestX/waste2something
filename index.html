@@ -3,7 +3,6 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Waste To Something</title>
-	<script src="jsKoder.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://kit.fontawesome.com/367f94419b.js" crossorigin="anonymous"></script>
 </head>
@@ -11,23 +10,17 @@
 
 	<nav>
 		<h3>Waste To Something</h3>
-		<ul class="ul">
-			<li><a href="" onclick="" class="nav">Donate</a></li>
-			<li><a href="" onclick="window.open('https://sdgs.un.org/goals')" class="nav">Visit SDG.UN</a></li>
-		</ul>
-		
-			<a href="#" class="menuicon"><i class="fas fa-bars"></i></a> <!--ICON BY fontawesome.com------>
 	</nav>
 
 <div class="wcas">
 	<h2>Waste To Something</h2>
 	<p>Let's change our waste to something</p>
-	<button>Let's GO!</button>
+	<button onclick="document.getElementById('sdgList').scrollIntoView();">Let's GO!</button> <!-helped by - https://stackoverflow.com/questions/16349490/html-css-buttons-that-scroll-down-to-different-div-sections-on-a-webpage->
 </div>
 
-	<br><h2 class="sdgList">Let's Practice 3R</h2>
+	<br><h2 id="sdgList">Let's Practice 3R</h2>
 
-<div class="inlineSdg">
+<div id="inlineSdg">
 	<div id="containerbox">
 	<div id="sdgBox">
 		<strong>Recycle</strong>
@@ -54,9 +47,9 @@
 
 <div class="cubox">
 <div class="cause">
-	<img src="strwocean.jpg" class="strwoc">
+	<img src="strwocean.jpg" class="strwoc"><!--image by https://www.pinterest.com/pin/429601251952310100/-->
 	<h3>Why Do We Need To Practice 3R?</h3>
-	<p>For the past 100 years, human are inventing a lot of things that can help human to do their daily routine and work. Unfortunately, This effort gives really bad impact for the mother nature. The mother nature is slowly being destroyed by this human invention. We have cause it to happen and now we need to fix it.</p>
+	<p>For the past 100 years, human are inventing a lot of things that can help human to do their daily routine and work. Unfortunately, This effort gives really bad impact for the mother nature when they are not being managed wisely. One if the invention is plastic bags, straws etc. The mother nature is slowly being destroyed by this human invention. We have cause it to happen and now we need to fix it.</p>
 </div></div>
 
 <h3 id="sdfct">Some Sad Facts</h3>
@@ -72,10 +65,42 @@
 	</div>
 
 	<div class="nmbr">
-		<h4 id="fct3">5.25</h4>
-		<p>Macro and micro <br> pieces in ocean</p>
+		<h4 id="fct3">100,000</h4>
+		<p>Mamal Dies every <br> year cause by plastic pollution</p>
+	</div>
+</div>
+<p id="fctdes">And there is many more pollution and disaster that gives impacts to life under water caused by plastic only. It is sad to see life under water such as fish are suffering from our waste that is being released into a beautiful ocean by human.</p>
+
+<div id="belowwtr">
+	<h3>GOAL 14: Life Below Water</h3>
+	<strong style="margin-bottom: 10px;">UN SDGs 14th goal</strong>
+	<div class="bwtr">
+		<p class="smal">By practicing 3R, we could reach the 14th goal of SDGs. It is everyones responsibility to practice 3R either at home, office or even shopping mall. It is a great habit and it is fun too. by doing 3R, we could gain so much benefits, either for ourself, the mother nature or somebody elses.</p>
+
+		<p>By recycling, you can make anything you want the way you want it and like it. If you buy it, there is just limited design that you may like or not, but if you build something by recycling, you can make it exactly how you want it and love it. It will also cost cheaper than the one at the store. This is why there is no reason for you not to practice 3R, at least recycling.</p>	
 	</div>
 </div>
 
+<div id="vid">
+	<h3>See 3R In Action</h3>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/TPG6E4nxtSw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<p>At the end, it is our responsible to save the planet expecially life below water and the water or ocean etc it self. This is because ocean etc is our only sources for water. Without them, we cant even drink or have any water supplies. Life below water such as fish, crab, squid, prawn etc are also our sources of food. This shows us how important it is to practice 3R, so that all of our waste will ended up in the ocean. Let's do our par - together 😉✨</p>
+</div>
 </body>
+
+<footer>
+	<div id="ftr1">
+		<h3>Waste To Something</h3><p>Created by Hakim and helped by (see comment in code)</p>
+	</div>
+
+<!----------------------------ICON BY fontawesome.com------------------------------------>
+	<div id="flw">
+		<p>Follow Me On:</p>
+		<a onclick="window.open('https://www.instagram.com/hwfanz_m/')"><i class="fab fa-instagram" style="color: #d45726;"></i></a>
+		<a onclick="window.open('https://web.facebook.com/hakim.zalid/')" style="color: #2d8bc2;"><i class="fab fa-facebook"></i></a>
+		<a onclick="window.open('https://www.tiktok.com/@phantom_203?lang=en')"><i class="fab fa-tiktok"></i></a>
+	</div>
+
+	<div class="btmclr"></div>
+</footer>
 </html>
